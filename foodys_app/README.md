@@ -8,7 +8,9 @@ This is a simple Foody App. <br>
 Foody app inside, Category - Favourite - Home screens included. <br>
 Home Screen & Categories & inside Categories  ; it can see photos line 1.<br>
 My Basket screen --> You can add and remove items from the My Cart screen; it can see photos line 2.<br>
-My basket screen empty, fav screen and category item detail screen it seems photos line 3.
+My basket screen empty, fav screen and category item detail screen it seems photos line 3. <br>
+I used fake api. Because I couldn't find real suitable api for this application and I didn't like it. So i created fake api and i used them. <br> Also in this application, I used the Scoped Model architecture for state management. Because this is a simple starter app and not very comprehensive. And for now I used  and know this as I implemented Scoped Model better.
+I also kept the favorite list in the phone database. Favorites can be displayed again if the application is restarted.
 
 <table>
   <tr>
