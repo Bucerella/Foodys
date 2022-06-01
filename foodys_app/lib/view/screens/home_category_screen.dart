@@ -14,14 +14,6 @@ import 'package:google_fonts/google_fonts.dart';
 class HomeCategoryScreen extends StatelessWidget {
   final MainController mainController = MainController();
 
-  List<Widget> returnCategoryCardList() {
-    List<HomeScreenCategoryCard> catList = [];
-    for (Categories cat in Datas.categoryList) {
-      catList.add(HomeScreenCategoryCard(cat));
-    }
-    return catList;
-  }
-
   List<Widget> imagesHome = [
     Image.asset(Constants.foodImg),
     Image.asset(Constants.cooking2Img),
@@ -134,5 +126,13 @@ class HomeCategoryScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  List<Widget> returnCategoryCardList() {
+    List<HomeScreenCategoryCard> catList = [];
+    for (Categories cat in Datas.categoryList) {
+      catList.add(HomeScreenCategoryCard(cat));
+    }
+    return catList;
   }
 }

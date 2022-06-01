@@ -26,5 +26,10 @@ void main() {
     /// Clicking navbar fav icon
     await tester.pump();
     expect(find.text(Constants.fav), findsOneWidget);
+
+    ///Clicking my basket navbar item and expect My Basket text
+    await tester.tap(find.byIcon(Icons.shopping_cart));
+    await tester.pump();
+    expect(find.text(Constants.myBasket), findsOneWidget);
   });
 }
